@@ -132,10 +132,10 @@ class _CourseChallengeCard extends StatelessWidget {
 
   // 난이도별 색상 (배지와 강조선에 사용)
   static const _difficultyColor = {
-    'EASY': Color(0xFF27AE60),
-    'BEGINNER': Color(0xFF27AE60),
+    'EASY': Color(0xFF3EAA5B),
+    'BEGINNER': Color(0xFF3EAA5B),
     'NORMAL': Color(0xFFE67E22),
-    'HARD': Color(0xFFE74C3C),
+    'HARD': Color(0xFFE84C3F),
   };
 
   @override

@@ -369,8 +369,8 @@ class _ChallengeRankingTab extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     // 난이도별 강조색 — EASY 는 초록, HARD 는 검정 계열.
     final accentColor = difficulty == 'EASY'
-        ? const Color(0xFF27AE60)
-        : const Color(0xFF1C1C1E);
+        ? const Color(0xFF3EAA5B)
+        : const Color(0xFFE84C3F);
 
     // 이 챌린지의 본 난이도 코스에 아직 아무도 기록을 남기지 않은 경우.
     // BE 가 그 자리 challengeId 를 null 로 내려 — API 호출 자체가 필요 없다.

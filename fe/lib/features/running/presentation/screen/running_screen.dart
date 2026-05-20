@@ -63,7 +63,7 @@ class RunningScreen extends ConsumerWidget {
   ) {
     final isEasy = difficulty == 'EASY';
     final accentColor =
-        isEasy ? const Color(0xFF27AE60) : const Color(0xFFE74C3C);
+        isEasy ? const Color(0xFF3EAA5B) : const Color(0xFFE84C3F);
 
     // 시작 진입점이 세션 컨텍스트를 박아두는 단독 책임 — 자유 러닝 등 다른 경로의 잔여를
     // 끊고 challengeId 만 깨끗이 세팅. courseId / courseDraftId 는 자유 러닝 기준 null
@@ -489,7 +489,7 @@ class _ChallengeButtons extends ConsumerWidget {
                         description: '단순한 도형을\n따라 그려요',
                         labelAlignment: CrossAxisAlignment.start,
                         shapeAlignment: Alignment.bottomRight,
-                        accentColor: const Color(0xFF27AE60),
+                        accentColor: const Color(0xFF3EAA5B),
                         shapeIcon: Icons.change_history_outlined,
                         attemptCount: easyAttempt,
                         myBestInfo: easyBest,
@@ -518,7 +518,7 @@ class _ChallengeButtons extends ConsumerWidget {
                         description: '복잡한 도형에\n도전하세요',
                         labelAlignment: CrossAxisAlignment.end,
                         shapeAlignment: Alignment.topLeft,
-                        accentColor: const Color(0xFF1C1C1E),
+                        accentColor: const Color(0xFFE84C3F),
                         shapeIcon: Icons.directions_car_outlined,
                         attemptCount: hardAttempt,
                         myBestInfo: hardBest,
