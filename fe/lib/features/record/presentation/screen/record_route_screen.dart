@@ -44,7 +44,7 @@ class _RecordRouteScreenState extends State<RecordRouteScreen> {
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         // AppBar 배경을 살짝 반투명하게 — 지도와 자연스럽게 어우러진다.
-        backgroundColor: Colors.white.withOpacity(0.85),
+        backgroundColor: Colors.white.withValues(alpha: 0.85),
         elevation: 0,
         foregroundColor: Colors.black,
         title: Text(
