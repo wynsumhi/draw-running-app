@@ -655,14 +655,12 @@ class _RightFabColumn extends StatelessWidget {
 class _FabIconButton extends StatelessWidget {
   final IconData icon;
   final String tooltip;
-  final bool isActive;
   final VoidCallback onTap;
 
   const _FabIconButton({
     required this.icon,
     required this.tooltip,
     required this.onTap,
-    this.isActive = false,
   });
 
   @override
@@ -675,8 +673,7 @@ class _FabIconButton extends StatelessWidget {
           width: 44,
           height: 44,
           decoration: BoxDecoration(
-            // 활성화 상태면 경로 색상, 비활성이면 흰색 배경
-            color: isActive ? kCourseRouteColor : Colors.white,
+            color: Colors.white,
             shape: BoxShape.circle,
             boxShadow: const [
               BoxShadow(
@@ -689,7 +686,7 @@ class _FabIconButton extends StatelessWidget {
           child: Icon(
             icon,
             size: 22,
-            color: isActive ? Colors.white : Colors.black87,
+            color: Colors.black87,
           ),
         ),
       ),

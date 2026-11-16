@@ -36,11 +36,6 @@ class RecordRouteScreen extends StatefulWidget {
 }
 
 class _RecordRouteScreenState extends State<RecordRouteScreen> {
-  // 동일한 컨트롤러를 onMapReady 이후 다른 콜백에서 쓸 일은 없지만,
-  // 추후 "내 위치로 이동" 같은 버튼이 들어오면 여기에 보관한 컨트롤러를 사용한다.
-  // 현재로썬 단순 보관용.
-  NaverMapController? _controller;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -87,8 +82,6 @@ class _RecordRouteScreenState extends State<RecordRouteScreen> {
 
   // 지도 컨트롤러 준비 → 폴리라인 + 마커 + fitBounds 일괄 실행.
   Future<void> _onMapReady(NaverMapController controller) async {
-    _controller = controller;
-
     // domain LatLng → flutter_naver_map NLatLng 변환.
     // shared/map/lat_lng_naver_ext.dart 의 .toNLatLng() 사용.
     final coords = widget.nodes.map((p) => p.toNLatLng()).toList();

@@ -10,7 +10,6 @@ import 'package:running/shared/location/location_service.dart';
 import 'package:running/shared/map/lat_lng_naver_ext.dart';
 import 'package:running/shared/model/lat_lng.dart';
 import 'package:running/shared/network/api_exception.dart';
-import 'package:running/features/running/domain/run_start_response.dart';
 import 'package:running/features/running/domain/running_repository.dart';
 import 'package:running/shared/sensor/cadence_service.dart';
 import 'package:running/shared/sensor/altitude_service.dart';

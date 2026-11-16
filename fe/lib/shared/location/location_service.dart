@@ -1,5 +1,4 @@
 import 'package:geolocator/geolocator.dart';
-import 'package:geolocator_android/geolocator_android.dart';
 import 'package:running/shared/model/lat_lng.dart';
 
 // 위치 관련 로직을 한 곳에서 관리하는 서비스.
