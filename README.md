@@ -14,20 +14,20 @@ AI가 생성한 그림 모양의 경로를 실제로 달리며 완성하고, 내
 
 ## 👥 팀원
 
-| 이름 | 역할 |
-|------|------|
+| 이름   | 역할          |
+| ------ | ------------- |
 | 박성문 | 팀장 FE INFRA |
-| 강민규 | AI BE |
-| 김종민 | BE |
-| 김현아 | FE |
-| 문관영 | BE FE |
-| 신윤수 | BE INFRA |
+| 강민규 | AI BE         |
+| 김종민 | BE            |
+| 김현아 | FE            |
+| 문관영 | BE FE         |
+| 신윤수 | BE INFRA      |
 
 ---
 
 ## 📅 개발 기간
 
-> 2025.04.06 ~ 2025.05.21
+> 2026.04.06 ~ 2026.05.21
 
 ---
 
@@ -40,12 +40,14 @@ AI가 생성한 그림 모양의 경로를 실제로 달리며 완성하고, 내
 ## 💡 핵심 기능
 
 ### 🏅 챌린지 러닝
+
 - 매주 **EASY / HARD** 두 가지 챌린지 폴리곤 공개
 - 같은 주차 EASY + HARD는 쌍으로 관리 (groupUUID)
 - 달린 경로와 챌린지 폴리곤의 **유사도 점수** 계산 (0~100점)
 - 주차별 랭킹 제공
 
 ### 📐 유사도 판별 알고리즘
+
 - 두 경로를 각각 500개 점으로 리샘플링
 - GPS 위경도 → 평면 좌표 변환 (서울 위도 보정)
 - 0°~350° 회전 탐색 후 ±12° 미세 조정으로 **최적 회전각** 탐색
@@ -53,6 +55,7 @@ AI가 생성한 그림 모양의 경로를 실제로 달리며 완성하고, 내
 - **Coverage** (내 경로가 폴리곤 안에 있는 정도) + **Adherence** (폴리곤이 내 경로 근처에 있는 정도) 평균
 
 ### 🗺️ 코스 생성 및 공유
+
 - 달린 기록을 코스로 저장 및 공유
 - **난이도 자동 계산**: 거리 / 오르막 경사도 / 누적 고도 상승 기준으로 자동 분류
   - BEGINNER → EASY → NORMAL → HARD
@@ -60,6 +63,7 @@ AI가 생성한 그림 모양의 경로를 실제로 달리며 완성하고, 내
 - 코스 북마크
 
 ### 📍 러닝 기록
+
 - 실시간 GPS 추적
 - 케이던스(보폭 빈도) 측정
 - 완주 판정: 코스 경로와 80% 이상 공간 유사도
@@ -67,11 +71,13 @@ AI가 생성한 그림 모양의 경로를 실제로 달리며 완성하고, 내
 - 완주 시 경로 이미지 자동 생성
 
 ### 🌤️ 날씨
+
 - 기상청 Open API 연동 (하루 8회 자동 갱신)
 - 현재 위치 기반 날씨 조회
 - Redis 캐시로 불필요한 API 호출 최소화
 
 ### 🏆 랭킹
+
 - Redis Sorted Set 기반 코스별 / 챌린지별 랭킹
 - 상위 5명 + 내 순위 + 내 앞 순위 제공
 
@@ -79,13 +85,13 @@ AI가 생성한 그림 모양의 경로를 실제로 달리며 완성하고, 내
 
 ## ⚒️ 기술 스택
 
-| 분류 | 기술 스택 |
-|------|----------|
-| **Frontend** | [![My Skills](https://skillicons.dev/icons?i=flutter,dart)](https://skillicons.dev) |
-| **Backend** | [![My Skills](https://skillicons.dev/icons?i=java,spring,gradle)](https://skillicons.dev) |
-| **Database** | [![My Skills](https://skillicons.dev/icons?i=postgresql,redis)](https://skillicons.dev) |
-| **Infra** | [![My Skills](https://skillicons.dev/icons?i=nginx,aws,grafana)](https://skillicons.dev) |
-| **배포** | [![My Skills](https://skillicons.dev/icons?i=docker,jenkins)](https://skillicons.dev) |
+| 분류                | 기술 스택                                                                                     |
+| ------------------- | --------------------------------------------------------------------------------------------- |
+| **Frontend**        | [![My Skills](https://skillicons.dev/icons?i=flutter,dart)](https://skillicons.dev)           |
+| **Backend**         | [![My Skills](https://skillicons.dev/icons?i=java,spring,gradle)](https://skillicons.dev)     |
+| **Database**        | [![My Skills](https://skillicons.dev/icons?i=postgresql,redis)](https://skillicons.dev)       |
+| **Infra**           | [![My Skills](https://skillicons.dev/icons?i=nginx,aws,grafana)](https://skillicons.dev)      |
+| **배포**            | [![My Skills](https://skillicons.dev/icons?i=docker,jenkins)](https://skillicons.dev)         |
 | **협업 / 개발도구** | [![My Skills](https://skillicons.dev/icons?i=git,gitlab,notion,jira)](https://skillicons.dev) |
 
 <details>
@@ -93,47 +99,47 @@ AI가 생성한 그림 모양의 경로를 실제로 달리며 완성하고, 내
 
 ### Frontend
 
-| 항목 | 내용 |
-|------|------|
-| Framework | Flutter 3.41.7 / Dart |
-| 상태관리 | Riverpod |
-| 라우팅 | GoRouter |
-| HTTP | Dio + JWT 인터셉터 |
-| 지도 | flutter_naver_map |
+| 항목       | 내용                                |
+| ---------- | ----------------------------------- |
+| Framework  | Flutter 3.41.7 / Dart               |
+| 상태관리   | Riverpod                            |
+| 라우팅     | GoRouter                            |
+| HTTP       | Dio + JWT 인터셉터                  |
+| 지도       | flutter_naver_map                   |
 | GPS / 센서 | geolocator, pedometer, sensors_plus |
 
 ### Backend
 
-| 항목 | 내용 |
-|------|------|
+| 항목      | 내용                                  |
+| --------- | ------------------------------------- |
 | Framework | Spring Boot 3.5.13 / Java 21 / Gradle |
-| 인증 | Spring Security + JWT (jjwt 0.12.6) |
-| ORM | Spring Data JPA + Hibernate Spatial |
-| DB | PostgreSQL + PostGIS 16-3.4 |
-| Cache | Redis |
-| 공간 연산 | JTS (Java Topology Suite) |
-| API 문서 | SpringDoc OpenAPI (Swagger) |
+| 인증      | Spring Security + JWT (jjwt 0.12.6)   |
+| ORM       | Spring Data JPA + Hibernate Spatial   |
+| DB        | PostgreSQL + PostGIS 16-3.4           |
+| Cache     | Redis                                 |
+| 공간 연산 | JTS (Java Topology Suite)             |
+| API 문서  | SpringDoc OpenAPI (Swagger)           |
 
 ### Infrastructure
 
-| 항목 | 내용 |
-|------|------|
-| 서버 | AWS EC2 (Ubuntu 24.04) |
+| 항목     | 내용                          |
+| -------- | ----------------------------- |
+| 서버     | AWS EC2 (Ubuntu 24.04)        |
 | 컨테이너 | Docker Compose (9개 컨테이너) |
-| 웹서버 | Nginx (리버스 프록시, SSL) |
-| CI/CD | Jenkins |
-| SSL | Certbot / Let's Encrypt |
-| 모니터링 | Grafana + Loki + Promtail |
-| 알림 | WebhookBridge → Mattermost |
+| 웹서버   | Nginx (리버스 프록시, SSL)    |
+| CI/CD    | Jenkins                       |
+| SSL      | Certbot / Let's Encrypt       |
+| 모니터링 | Grafana + Loki + Promtail     |
+| 알림     | WebhookBridge → Mattermost    |
 
 ### 외부 API
 
-| 서비스 | 용도 |
-|--------|------|
-| 기상청 Open API | 러닝 중 현재 위치 날씨 조회 |
-| 네이버 지도 API | 지도 렌더링 |
-| Overpass API / OpenStreetMap | 도로·지형 데이터 |
-| Open Elevation API | 고도 데이터 |
+| 서비스                       | 용도                        |
+| ---------------------------- | --------------------------- |
+| 기상청 Open API              | 러닝 중 현재 위치 날씨 조회 |
+| 네이버 지도 API              | 지도 렌더링                 |
+| Overpass API / OpenStreetMap | 도로·지형 데이터            |
+| Open Elevation API           | 고도 데이터                 |
 
 </details>
 
@@ -142,7 +148,6 @@ AI가 생성한 그림 모양의 경로를 실제로 달리며 완성하고, 내
 ## 🌐 시스템 아키텍처
 
 ![시스템 아키텍처](./data/readme_img/system_architecture.png)
-
 
 ---
 
