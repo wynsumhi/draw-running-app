@@ -342,7 +342,7 @@ class _ChallengePickerSheet extends StatelessWidget {
             );
           },
         ),
-        SizedBox(height: MediaQuery.viewPaddingOf(context).bottom + 16),
+        SizedBox(height: bottomInset + 16),
       ],
     );
   }
