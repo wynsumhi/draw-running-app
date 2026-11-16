@@ -239,7 +239,7 @@ class _Thumbnail extends StatelessWidget {
                 fit: BoxFit.cover,
                 // 이미지 로드 실패 시 폴백.
                 // 네트워크 끊김 / 잘못된 URL 등 모든 케이스 일괄 처리.
-                errorBuilder: (_, __, ___) => const _ThumbnailPlaceholder(),
+                errorBuilder: (_, _, _) => const _ThumbnailPlaceholder(),
                 // 로딩 중에도 같은 자리에서 회색 칸이 보이도록 빈 컨테이너 표기.
                 loadingBuilder: (context, child, progress) {
                   if (progress == null) return child;

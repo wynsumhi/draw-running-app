@@ -31,8 +31,8 @@ class RunningRemoteDataSource {
       // 둘 다 null 이면 자유 러닝 — 빈 Map 으로 호출되어 URL 에 쿼리 자체가 안 붙는다.
       // 한쪽만 not-null 이면 그 키만 쿼리스트링에 실린다.
       final query = <String, dynamic>{
-        if (courseId != null) 'courseId': courseId,
-        if (courseDraftId != null) 'courseDraftId': courseDraftId,
+        'courseId': ?courseId,
+        'courseDraftId': ?courseDraftId,
       };
       final response = await _dio.get<Map<String, dynamic>>(
         '/api/v1/run/start',

@@ -745,7 +745,7 @@ class _LargePolygonImage extends StatelessWidget {
           imageUrl!,
           fit: BoxFit.fitWidth,
           alignment: alignment,
-          errorBuilder: (_, __, ___) => Center(
+          errorBuilder: (_, _, _) => Center(
             child: Icon(icon, size: 72, color: Colors.white.withValues(alpha: 0.3)),
           ),
         ),

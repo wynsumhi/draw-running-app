@@ -374,7 +374,7 @@ class _CourseThumbnail extends StatelessWidget {
                 url!,
                 fit: BoxFit.cover,
                 // 이미지 로드 실패 시 기본 아이콘으로 대체
-                errorBuilder: (_, __, ___) => const _ThumbnailPlaceholder(),
+                errorBuilder: (_, _, _) => const _ThumbnailPlaceholder(),
               )
             : const _ThumbnailPlaceholder(),
       ),

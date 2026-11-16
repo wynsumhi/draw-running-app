@@ -117,7 +117,7 @@ class RunningState {
   }
 
   // UI 표시용 계산 게터
-  String get distanceLabel => '${distanceKm.toStringAsFixed(2)}';
+  String get distanceLabel => distanceKm.toStringAsFixed(2);
 
   String get elapsedLabel {
     final h = elapsedSeconds ~/ 3600;

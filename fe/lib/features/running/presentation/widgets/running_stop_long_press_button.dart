@@ -103,7 +103,7 @@ class _RunningStopLongPressButtonState
             // AnimatedBuilder 로 _progress 가 바뀔 때만 이 부분이 리빌드되도록 격리.
             AnimatedBuilder(
               animation: _progress,
-              builder: (_, __) => FractionallySizedBox(
+              builder: (_, _) => FractionallySizedBox(
                 widthFactor: _progress.value,
                 child: Container(
                   decoration: BoxDecoration(
