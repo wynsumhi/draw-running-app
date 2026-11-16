@@ -367,7 +367,7 @@ class _ChallengeRankingTab extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // 난이도별 강조색 — EASY 는 초록, HARD 는 검정 계열.
+    // 난이도별 강조색 — EASY 는 초록, HARD 는 빨강 계열.
     final accentColor = difficulty == 'EASY'
         ? const Color(0xFF3EAA5B)
         : const Color(0xFFE84C3F);
