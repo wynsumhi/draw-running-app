@@ -25,9 +25,10 @@ AI가 생성한 그림 모양의 경로를 실제로 달리며 완성하고, 내
 
 ## 🖼️ 서비스 화면
 
-> ![메인 진입 페이지](image.png)
-> ![코스 에디터 페이지](image-1.png)
-> ![랭킹 페이지](image-2.png)
+| 챌린지 홈 | 코스 에디터 | 랭킹 |
+| :---: | :---: | :---: |
+| <img src="docs/images/challenge-home.png" alt="챌린지 홈" width="240"> | <img src="docs/images/course-editor.png" alt="코스 에디터" width="240"> | <img src="docs/images/ranking.png" alt="랭킹" width="240"> |
+| 주간 Easy·Hard 챌린지 진입 | 도로 위에만 찍히는 경로 그리기 | 주차별 유사도 랭킹 |
 
 ---
 
